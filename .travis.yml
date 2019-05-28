@@ -6,6 +6,6 @@ before_install:
   - docker build -t muzij/docker-react -f Dockerfile.dev .
 
 script:
- - docker run -t muzij/docker-react npm run test -- --coverage
+ - docker run muzij/docker-react npm run test -- --coverage
 
- 
+
